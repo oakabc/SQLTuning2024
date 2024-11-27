@@ -1,6 +1,9 @@
-# CRUD API Documentation
+# CRUD API Documentation by Dr.Chanakarn Kingkaew for SQL Tuning 2024
 
 This is a simple CRUD (Create, Read, Update, Delete) API built with Node.js and Express. The API uses an in-memory data structure to store items and demonstrates basic RESTful principles.
+
+  
+นี่คือ API แบบ CRUD (Create, Read, Update, Delete) อย่างง่ายที่พัฒนาด้วย Node.js และ Express โดย API นี้ใช้โครงสร้างข้อมูลในหน่วยความจำ (in-memory data structure) เพื่อจัดเก็บรายการ และแสดงให้เห็นหลักการพื้นฐานของ RESTful อย่างชัดเจน
 
 ---
 
@@ -37,3 +40,74 @@ http://localhost:3000
 ```json
 { "error": "Name is required" }
 ```
+
+### 2. Get All Items
+**HTTP Method**: `GET`  
+**Endpoint**: `/items`
+
+**Description**: Retrieves all items in the list.
+
+#### Response
+- 200 OK:
+```json
+[
+  { "id": 1, "name": "Apple" },
+  { "id": 2, "name": "Banana" }
+]
+```
+### 3. Get an Item by ID
+**HTTP Method**: `GET`  
+**Endpoint**: `/items/:id`
+**Description**: Retrieves a specific item by its unique ID.
+**Path Parameter**
+- `id` (integer): The ID of the item to retrieve.
+#### Response
+- 200 OK:
+```json
+{
+  "id": 1,
+  "name": "Apple"
+}
+```
+- 404 Not Found:
+```json
+{ "error": "Item not found" }
+```
+### 4. Update an Item
+**HTTP Method**: `PUT`  
+**Endpoint**: `/items/:id`
+**Description**: Updates the name of a specific item by its unique ID.
+**Path Parameter**
+- `id` (integer): The ID of the item to retrieve.
+#### Request Body
+```json
+{
+  "name": "string"
+}
+```
+#### Response
+- 200 OK:
+```json
+{
+  "id": 1,
+  "name": "Banana"
+}
+```
+- 404 Bad Request:
+```json
+{
+  "error": "Name is required"
+}
+```
+- 404 Not Found:
+```json
+{
+  "error": "Item not found"
+}
+```
+
+
+
+
+
+
