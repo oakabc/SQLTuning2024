@@ -168,4 +168,29 @@ GET /items HTTP/1.1
   { "id": 2, "name": "Banana" }
 ]
 ```
+### Update an Item
+#### Request:
+```http
+PUT /items/1 HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Orange"
+}
+```
+#### Response:
+```json
+{
+  "id": 1,
+  "name": "Orange"
+}
+```
+### Delete an Item
+#### Request:
+```http
+DELETE /items/1 HTTP/1.1
+```
+#### Response: `204 No Content`
+
+
 
