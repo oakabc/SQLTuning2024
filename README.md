@@ -83,7 +83,7 @@ http://localhost:3000
 
 **Description**: Updates the name of a specific item by its unique ID.
 **Path Parameter**
-- `id` (integer): The ID of the item to retrieve.
+- `id` (integer): The ID of the item to update.
 #### Request Body
 ```json
 {
@@ -110,9 +110,31 @@ http://localhost:3000
   "error": "Item not found"
 }
 ```
+### 4. Update an Item
+**HTTP Method**: `DELETE`  
+**Endpoint**: `/items/:id`
 
 
+**Description**: Deletes a specific item by its unique ID.
+**Path Parameter**
+- `id` (integer): The ID of the item to delete.
+#### Response
+- 204 No Content: Successfully deleted.
+- 404 Not Found:
+```json
+{
+  "error": "Item not found"
+}
+```
+## Status Codes
 
+| Status Code      | Description                              |
+|-------------------|------------------------------------------|
+| **200 OK**       | Request was successful.                 |
+| **201 Created**  | New resource successfully created.      |
+| **204 No Content**| Resource successfully deleted.          |
+| **400 Bad Request**| Invalid input or missing data.         |
+| **404 Not Found** | Resource not found.                    |
 
 
 
