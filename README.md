@@ -138,7 +138,7 @@ http://localhost:3000
 
 
 ## Usage Examples
-**Create an Item**
+### Create an Item
 #### Request:
 ```json
 POST /items HTTP/1.1
