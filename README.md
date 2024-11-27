@@ -140,7 +140,7 @@ http://localhost:3000
 ## Usage Examples
 ### Create an Item
 #### Request:
-```json
+```http
 POST /items HTTP/1.1
 Content-Type: application/json
 
@@ -155,3 +155,17 @@ Content-Type: application/json
   "name": "Apple"
 }
 ```
+
+### Get All Items
+#### Request:
+```http
+GET /items HTTP/1.1
+```
+#### Response:
+```json
+[
+  { "id": 1, "name": "Apple" },
+  { "id": 2, "name": "Banana" }
+]
+```
+
