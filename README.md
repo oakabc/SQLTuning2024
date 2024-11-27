@@ -24,5 +24,16 @@ http://localhost:3000
 {
   "name": "string"
 }
-
+```
 #### Response
+- 201 Created:
+```json
+{
+  "id": 1,
+  "name": "Apple"
+}
+```
+- 400 Bad Request:
+```json
+{ "error": "Name is required" }
+```
