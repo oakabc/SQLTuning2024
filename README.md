@@ -137,4 +137,21 @@ http://localhost:3000
 | **404 Not Found** | Resource not found.                    |
 
 
+## Usage Examples
+**Create an Item**
+#### Request:
+```json
+POST /items HTTP/1.1
+Content-Type: application/json
 
+{
+  "name": "Apple"
+}
+```
+#### Response:
+```json
+{
+  "id": 1,
+  "name": "Apple"
+}
+```
