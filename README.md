@@ -45,6 +45,7 @@ http://localhost:3000
 **HTTP Method**: `GET`  
 **Endpoint**: `/items`
 
+
 **Description**: Retrieves all items in the list.
 
 #### Response
@@ -58,6 +59,8 @@ http://localhost:3000
 ### 3. Get an Item by ID
 **HTTP Method**: `GET`  
 **Endpoint**: `/items/:id`
+
+
 **Description**: Retrieves a specific item by its unique ID.
 **Path Parameter**
 - `id` (integer): The ID of the item to retrieve.
@@ -76,6 +79,8 @@ http://localhost:3000
 ### 4. Update an Item
 **HTTP Method**: `PUT`  
 **Endpoint**: `/items/:id`
+
+
 **Description**: Updates the name of a specific item by its unique ID.
 **Path Parameter**
 - `id` (integer): The ID of the item to retrieve.
