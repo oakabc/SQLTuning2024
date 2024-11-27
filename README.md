@@ -1,9 +1,6 @@
 # CRUD API Documentation by Dr.Chanakarn Kingkaew for SQL Tuning 2024
 
-This is a simple CRUD (Create, Read, Update, Delete) API built with Node.js and Express. The API uses an in-memory data structure to store items and demonstrates basic RESTful principles.
-
-  
-นี่คือ API แบบ CRUD (Create, Read, Update, Delete) อย่างง่ายที่พัฒนาด้วย Node.js และ Express โดย API นี้ใช้โครงสร้างข้อมูลในหน่วยความจำ (in-memory data structure) เพื่อจัดเก็บรายการ และแสดงให้เห็นหลักการพื้นฐานของ RESTful อย่างชัดเจน
+นี่คือ API แบบ CRUD (Create, Read, Update, Delete) อย่างง่ายที่พัฒนาด้วย Node.js และ Express โดย API นี้ใช้โครงสร้างข้อมูลในหน่วยความจำ (in-memory data structure) เพื่อจัดเก็บรายการ และแสดงให้เห็นหลักการพื้นฐานของ RESTful อย่างชัดเจน โปรดศึกษาวิธีการทำ API Documentation
 
 ---
 
