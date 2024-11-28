@@ -1,4 +1,4 @@
-[Slide:](https://docs.google.com/presentation/d/1fktgjVA73uy0ZuUc8C2hcAze6KFrH577qFqZg89JSug/edit?usp=sharing)
+[Slide:](https://docs.google.com/presentation/d/1fktgjVA73uy0ZuUc8C2hcAze6KFrH577qFqZg89JSug/edit?usp=sharing) สามารถกดเข้า slide ทางนี้ได้เลย
 
 # CRUD API Documentation by Dr.Chanakarn Kingkaew for SQL Tuning 2024
 
