@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const sql = require('mssql'); // Import mssql module to use sql types like sql.NVarChar, sql.Decimal
 const connectToDatabase = require('./db'); // Database connection from db.js
 
 const app = express();
@@ -92,6 +93,40 @@ app.delete('/products/:id', async (req, res) => {
     }
   }
 });
+
+// GET: Fetch products with optional filters (query parameters)
+app.get('/products/search', async (req, res) => {
+    const { category, maxPrice } = req.query; // Get query parameters
+  
+    const pool = await connectToDatabase();
+    if (pool) {
+      try {
+        // Base query
+        let query = 'SELECT * FROM dbo.Products WHERE 1=1';
+        const request = pool.request();
+  
+        // Add filters if query parameters are provided
+        if (category) {
+          query += ' AND Category = @category';
+          request.input('category', sql.NVarChar, category);
+        }
+  
+        if (maxPrice) {
+          query += ' AND UnitPrice <= @maxPrice';
+          request.input('maxPrice', sql.Decimal, maxPrice);
+        }
+  
+        // Execute the query
+        const result = await request.query(query);
+        res.json(result.recordset); // Send the filtered results
+      } catch (err) {
+        res.status(500).send('Error fetching products: ' + err.message);
+      } finally {
+        pool.close();
+      }
+    }
+  });
+  
 
 // Start the server
 app.listen(port, () => {
