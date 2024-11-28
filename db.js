@@ -1,20 +1,14 @@
 const sql = require('mssql');
 
-// Configuration for SQL Server
 const config = {
-  server: 'PIMETF111485', // โปรดเปลี่ยนเป็นชื่อของตนเอง
-  database: 'SevenElevenWarehouse', // The database you want to connect to
+  server: 'PIMETF111485', // SQL Server instance
+  database: 'SevenElevenWarehouse', // Database name
+  user: 'sqlauth', // SQL Authentication username
+  password: '12345678', // Password for SQL Authentication
   options: {
-    trustedConnection: true, // Enables Windows Authentication
-    encrypt: false, // Disable encryption if not needed
-  },
-  authentication: {
-    type: 'ntlm', // Use NTLM for Windows Authentication
-    options: {
-      domain: '', // Your Windows domain (leave blank if local)
-      userName: '', // Not required for Windows Authentication
-      password: '', // Not required for Windows Authentication
-    },
+    enableArithAbort: true,
+    encrypt: false, // Disable encryption for local setup
+    trustServerCertificate: true, // Bypass certificate validation
   },
 };
 
