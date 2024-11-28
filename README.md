@@ -109,7 +109,7 @@ http://localhost:3000
   "error": "Item not found"
 }
 ```
-### 4. Update an Item
+### 5. Delete an Item
 **HTTP Method**: `DELETE`  
 **Endpoint**: `/items/:id`
 
