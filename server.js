@@ -1,4 +1,5 @@
 const express = require('express');
+const axios = require('axios');
 const bodyParser = require('body-parser');
 
 const app = express();
@@ -64,6 +65,22 @@ app.delete('/items/:id', (req, res) => {
   items.splice(index, 1);
   res.status(204).send(); // No content
 });
+
+
+// GET: Read lat, lon based on current ISS location
+console.log("Setting up /iss-location route");
+app.get('/iss-location', async (req, res) => {
+    console.log("Received request for /iss-location");
+    try {
+        const response = await axios.get('https://api.wheretheiss.at/v1/satellites/25544');
+        const { latitude, longitude } = response.data;
+        res.json({ latitude, longitude });
+    } catch (error) {
+        console.error("Error fetching ISS location:", error.message);
+        res.status(500).json({ error: 'Unable to fetch ISS location' });
+    }
+});
+
 
 // Start the server
 const PORT = 3000;
