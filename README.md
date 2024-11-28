@@ -86,7 +86,7 @@ http://localhost:3000
 #### Request Body
 ```json
 {
-  "name": "Banana"
+  "name": "string"
 }
 ```
 #### Response
