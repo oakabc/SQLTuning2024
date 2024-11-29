@@ -1,4 +1,8 @@
-[Slide:](https://docs.google.com/presentation/d/1fktgjVA73uy0ZuUc8C2hcAze6KFrH577qFqZg89JSug/edit?usp=sharing) สามารถกดเข้า slide ทางนี้ได้เลย
+เอกสารประกอบการเรียน MSSQL Database Performance Tuning
+
+
+[Slide (Day 1)](https://docs.google.com/presentation/d/1fktgjVA73uy0ZuUc8C2hcAze6KFrH577qFqZg89JSug/edit?usp=sharing) 
+[Slide (Day 2)](https://docs.google.com/presentation/d/1f1jVdsHw686d_DNNUx9is3rY7GQOr_cNjG9fbO7yWfs/edit?usp=sharing) 
 
 # CRUD API Documentation by Dr.Chanakarn Kingkaew for SQL Tuning 2024
 
