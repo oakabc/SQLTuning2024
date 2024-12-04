@@ -78,7 +78,7 @@ http://localhost:3000
 **Endpoint**: `/items/:id`
 
 
-**Description**: Updates the name of a specific item by its unique ID.
+**Description**: Updates the name of a specific item by its unique ID.   
 **Path Parameter**
 - `id` (integer): The ID of the item to update.
 #### Request Body
@@ -112,7 +112,7 @@ http://localhost:3000
 **Endpoint**: `/items/:id`
 
 
-**Description**: Deletes a specific item by its unique ID.
+**Description**: Deletes a specific item by its unique ID.   
 **Path Parameter**
 - `id` (integer): The ID of the item to delete.
 #### Response
