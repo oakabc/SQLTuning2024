@@ -1,10 +1,4 @@
-เอกสารประกอบการเรียน MSSQL Database Performance Tuning
-
-
-[Slide (Day 1)](https://docs.google.com/presentation/d/1fktgjVA73uy0ZuUc8C2hcAze6KFrH577qFqZg89JSug/edit?usp=sharing)    
-[Slide (Day 2)](https://docs.google.com/presentation/d/1f1jVdsHw686d_DNNUx9is3rY7GQOr_cNjG9fbO7yWfs/edit?usp=sharing) 
-
-# CRUD API Documentation by Dr.Chanakarn Kingkaew for SQL Tuning 2024
+# CRUD API Documentation by Dr.Chanakarn Kingkaew (Aj.Oak)
 
 นี่คือ API แบบ CRUD (Create, Read, Update, Delete) อย่างง่ายที่พัฒนาด้วย Node.js และ Express โดย API นี้ใช้โครงสร้างข้อมูลในหน่วยความจำ (in-memory data structure) เพื่อจัดเก็บรายการ และแสดงให้เห็นหลักการพื้นฐานของ RESTful อย่างชัดเจน โปรดศึกษาวิธีการทำ API Documentation
 
